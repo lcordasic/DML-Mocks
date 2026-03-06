@@ -59,6 +59,19 @@ force-app/main/default/
     OpportunityLineItem/
 ```
 
+## Publishing to GitHub
+
+The repo is initialized with an initial commit. To push to GitHub:
+
+1. Create a new repository on [GitHub](https://github.com/new) (e.g. `DML-Mocks`).
+2. Add the remote and push:
+   ```bash
+   git remote add origin https://github.com/YOUR_USERNAME/DML-Mocks.git
+   git push -u origin main
+   ```
+3. Set the repository description (GitHub → Settings → General):
+   > Apex project using virtual DAO + constructor injection for fast, DML-less unit tests. No external dependencies.
+
 ## Troubleshooting
 
 - **Apex tests fail to run:** Ensure `sf org list` shows an authenticated org and that metadata is deployed.
